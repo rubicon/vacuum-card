@@ -1,13 +1,17 @@
 {
-  "extends": ["eslint:recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "plugins": ["import"],
   "env": {
     "browser": true,
     "es6": true
   },
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2020,
     "sourceType": "module"
-  },
-  "rules": {}
+  }
 }
